@@ -11,9 +11,9 @@ const Main = () => {
 
         <div className="online-experiences">
           <h1>Online Experiences</h1>
-          <h3 className= "gray-text">Join unique interactive activities led by</h3>
-          <h3 className= "gray-text">One-of-a-kind-hosts- all without leaving</h3>
-          <h3 className= "gray-text">home.</h3>
+          <h3>Join unique interactive activities led by</h3>
+          <h3>One-of-a-kind-hosts- all without leaving</h3>
+          <h3>home.</h3>
         </div>
       </div>
       
