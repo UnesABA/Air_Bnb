@@ -11,13 +11,11 @@ const Main = () => {
 
         <div className="online-experiences">
           <h1>Online Experiences</h1>
-          <h3>Join unique interactive activities led by</h3>
-          <h3>One-of-a-kind-hosts- all without leaving</h3>
-          <h3>home.</h3>
+          <span>Join unique interactive activities led by</span>
+          <span>One-of-a-kind-hosts- all without leaving</span>
+          <span>home.</span>
         </div>
       </div>
-      
-
       
     </>
   )

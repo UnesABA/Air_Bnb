@@ -1,5 +1,7 @@
 body{
   font-family: "poppins", "sans-serif";
+  
+  background-color: rgb(219, 219, 215);
 }
 
 .navbar-container{
@@ -21,8 +23,12 @@ body{
 }
 
 .main-images{
-  max-width: 400px;;
+  max-width: 900px;
   padding-left: 100px;
+}
+
+.main-image{
+  width: 850px;
 }
 
 .online-experiences{
@@ -30,7 +36,6 @@ body{
   align-items: left;
   flex-direction: column;
   height: 150px;
-  width: 900px;
   padding: 10px 50px;
 }
 
@@ -54,9 +59,19 @@ body{
   height: 300px;
 }
 */
+
+.big-container,
+.cards-list{
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
 .card{
+  background-color: white;
+  position: relative;
   margin-top: 20px;
-  padding-left: 30px;
+  margin-left: 30px;
 }
 
 .card-container{
@@ -70,15 +85,15 @@ body{
 }
 
 .card-stats{
-  width: 110px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: left;
 }
 
 .star-icon-container{
   display: flex;
   align-items: center;
+  margin-right: 5px;
 }
 
 .star-icon{
@@ -96,6 +111,16 @@ body{
   margin: 3px;
 }
 
+.card-badge{
+  position: absolute;
+  top: 12px;
+  left: 25px;
+  background-color: rgb(238, 236, 236);
+  padding: 5px 7px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
 .gray-text{
   color: gray;
 }
@@ -103,4 +128,3 @@ body{
 .bold-text{
   font-weight: bold;
 }
-

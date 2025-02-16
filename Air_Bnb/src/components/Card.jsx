@@ -1,27 +1,35 @@
 import React from 'react'
-import zaferes from '/zaferes.png'
 import { FaStar } from 'react-icons/fa'
 
-const Card = () => {
+const Card = (props) => {
+  let badgeText;
+
+  if(props.item.openSpots === 0){
+    badgeText = "SOLD OUT"
+  }else if(props.item.location === "Online"){
+    badgeText= "ONLINE"
+  }
+
   return (
     <>
       <div className='card'>
+        {badgeText && <div className="card-badge">{badgeText}</div>}
         <div className="card-container">
-          <img src={zaferes} className="card-image" alt="Katie Zaferes" />
+          <img src= {`/${props.item.coverImg}`} className="card-image" alt="Katie Zaferes" />
 
           <div className='card-stats'>
             <div className='star-icon-container'>
               <FaStar className= "star-icon"/>
             </div>
             <div>
-              <span>5.0 </span>
-              <span className= "gray-text">(6) . USA</span>  
+              <span>{props.item.stats.rating}</span>
+              <span className= "gray-text">({props.item.stats.reviewCount}) . {props.item.location}</span>  
             </div>
           </div>
 
           <div className= "card-price">
-            <p>Life Lessons with Katie Zaferes</p>
-            <p><span className= "bold-text">From 136$</span> / person</p>
+            <p>{props.item.title}</p>
+            <p><span className= "bold-text">From {props.item.price}$</span> / person</p>
           </div>
           
         </div>
