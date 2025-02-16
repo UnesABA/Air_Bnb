@@ -1,0 +1,105 @@
+body{
+  font-family: "poppins", "sans-serif";
+}
+
+.navbar-container{
+  display: flex;
+  height: 50px;
+  box-shadow: 0 3px 7px rgba(85, 85, 85, 0.3);
+  padding: 25px 45px;
+  margin-bottom: 20px;
+}
+
+.logo{
+  height: 40px;
+  width: 110px;
+}
+
+.main-container{
+  display: flex;
+  flex-direction: column;
+}
+
+.main-images{
+  max-width: 400px;;
+  padding-left: 100px;
+}
+
+.online-experiences{
+  display: flex;
+  align-items: left;
+  flex-direction: column;
+  height: 150px;
+  padding: 10px 40px;
+}
+
+.online-experiences h1{
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.online-experiences h3 {
+  font-size: 16px;
+  line-height: 1.2; 
+  margin: 2px 0;
+}
+
+/*
+.card{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 300px;
+}
+*/
+.card{
+  background-color: yellow;
+  margin-top: 20px;
+  padding-left: 30px;
+}
+
+.card-container{
+  padding: 10px 20px;
+}
+
+.card-image{
+  height: 300px;
+  width: 245px;
+  border-radius: 10px;
+}
+
+.card-stats{
+  width: 110px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.star-icon-container{
+  display: flex;
+  align-items: center;
+}
+
+.star-icon{
+  height: 12px;
+  width: 12px;
+  color: rgb(229, 88, 112);
+}
+
+.card-price{
+  display: flex;
+  flex-direction: column;
+}
+
+.card-price p{
+  margin: 3px;
+}
+
+.gray-text{
+  color: gray;
+}
+
+.bold-text{
+  font-weight: bold;
+}
+
